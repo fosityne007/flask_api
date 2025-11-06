@@ -1,52 +1,89 @@
-# Famous' Flask API 🚀
+# 🌐 Famous' Flask API
 
-This is my first deployed Flask API hosted on **PythonAnywhere**.  
-It includes simple but functional endpoints to demonstrate Flask fundamentals and API design.
-
-## 🌐 Live URL
-🔗 [https://fosityne.pythonanywhere.com/](https://fosityne.pythonanywhere.com/)
+A simple and beginner-friendly **Flask REST API** built and deployed by **Osiaro Famous**.  
+This project demonstrates how to create, test, and deploy Python Flask applications online using **PythonAnywhere**.
 
 ---
 
-## 🧠 API Endpoints
+## 🚀 Live API
+**Base URL:** [https://fosityne.pythonanywhere.com](https://fosityne.pythonanywhere.com)
 
-| Endpoint | Method | Description |
-|-----------|---------|-------------|
-| `/` | GET | Home route — displays a welcome message |
-| `/time` | GET | Returns the current server time |
-| `/quote` | GET | Returns a random motivational quote |
-| `/add?a=2&b=3` | GET | Returns the sum of two numbers provided as query parameters |
+You can test the endpoints directly in your browser or with tools like **Postman** or **Thunder Client**.
 
 ---
 
-## 🛠️ Tech Stack
-- Python 3  
-- Flask Framework  
-- Hosted on [PythonAnywhere](https://www.pythonanywhere.com/)  
-- Tested with Postman
+## 📍 API Endpoints
 
----
+### 1. Home
+**GET** `/`  
+Returns a welcome message.
 
-## 💬Quote 
+**Example Response:**
 ```json
 {
-  "quote": "A curious mind is a fertile land for growth"
+  "message": "Welcome to Famous’ first Flask API!"
 }
 
-⚙️ Technologies Used
+4. Motivational Quote
+
+GET /quote
+Returns a random motivational quote, including one by Famous himself.
+
+Example Response:
+
+{
+  "quote": "A curious mind is a fertile land for growth."
+}
+
+5. Add Numbers
+
+GET /add?a=5&b=10
+Performs simple addition between two numbers.
+
+Example Response:
+
+{
+  "result": 15
+}
+
+🧠 Motivation
+
+“A curious mind is a fertile land for growth.” — Osiaro Famous
+
+This project was created to strengthen my understanding of backend development, RESTful API design, and web deployment using Flask and PythonAnywhere.
+
+⚙️ Tech Stack
 
 Python 3
 
-Flask 2
+Flask
 
-JSON
+Postman / Thunder Client for testing
 
-PythonAnywhere (for deployment)
+PythonAnywhere for deployment
 
-VS Code (for local development)
+💻 Running Locally
+# Clone the repository
+git clone https://github.com/fosityne007/flask_api.git
 
-🧠 Author
+# Navigate into the project
+cd flask_api
 
-Famous Osiaro O.
-Backend Developer | Building practical APIs with Flask & Spring Boot
-📧 Contact: [famous.osiaro@gmail.com]
+# Install dependencies
+pip install flask
+
+# Run the app
+python app.py
+
+
+The app is live at http://127.0.0.1:5000
+
+📦 Deployment
+
+The live version is deployed via PythonAnywhere, configured using a WSGI file.
+
+👤 Author
+
+Osiaro Famous .O
+Backend Developer | Flask Enthusiast
+📫 GitHub: fosityne007

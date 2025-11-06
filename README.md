@@ -27,7 +27,7 @@ It includes simple but functional endpoints to demonstrate Flask fundamentals an
 
 ---
 
-## 💬 Example Quote Output
+## 💬Quote 
 ```json
 {
   "quote": "A curious mind is a fertile land for growth"
